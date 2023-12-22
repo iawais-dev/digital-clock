@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    font-family: 'Poiret One', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgb(2, 2, 73),rgb(25, 25, 128)) ;
+}
+.container{
+color: white;
+/* background-color: aqua; */
+/* width: 100px; */
+padding: 30px;
+display: flex;
+}
+.digitalclock{
+    background-color: rgba(255, 255, 255, 0.032);
+    padding: 20px;
+    border-radius: 20px ;
+    margin: 0 0 0 0px;
+    display: flex;
+    font-size: 30px;
+    width: 630px;
+}
+#day{
+    margin: 0 30px 0 0px;
+}
+#hour{
+    margin: 0 30px 0 0;
+}
+#bar1{
+    margin: 0 30px 0 0;
+    color: red;
+}
+#bar2{
+    margin: 0 30px 0 0;
+    color: red;
+}
+#bar3{
+    color: red;
+    border: none;
+    margin: 0 30px 0 30px;
+}
+#minute{
+    margin: 0 30px 0 0;
+}
+#second{
+    margin: 0 30px 0 0px;
+    
+    z-index: 999;
+
+}
+
+
+@media (max-width : 655px) {
+    .digitalclock{
+        font-size: 15px;
+        width: 490px;
+    }
+}
+@media( max-width:556px){
+.digitalclock{
+    flex-direction: column;
+    font-size: 20px;
+    width: 200px;
+    /* align-item
+    s: center; */
+}
+#bar3{
+    margin: 0 30px 0 0px;
+}
+}
